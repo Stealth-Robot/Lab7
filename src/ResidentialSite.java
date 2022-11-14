@@ -3,7 +3,7 @@ public class ResidentialSite extends Site {
         return billableUnitCount * billingRate;
     }
 
-    protected double getTaxAmount(double billableUnitcount, double billingRate) {
-        return this.getBaseAmount(billableUnitcount, billingRate) * Site.TAX_RATE;
+    protected double getTaxAmount(double billableUnitCount, double billingRate) {
+        return this.getBaseAmount(billableUnitCount, billingRate) * Site.TAX_RATE;
     }
 }
