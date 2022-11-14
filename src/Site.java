@@ -1,8 +1,8 @@
 abstract class Site {
     protected static final double TAX_RATE = 0.13;
 
-    public double getBillableAmount(double _units, double _rate) {
-        return getBaseAmount(_units, _rate) + getTaxAmount(_units, _rate);
+    public double getBillableAmount(double billibleUnitCount, double _rate) {
+        return getBaseAmount(billibleUnitCount, _rate) + getTaxAmount(billibleUnitCount, _rate);
     }
 
     protected abstract double getTaxAmount(double units, double rate);
